@@ -1,6 +1,6 @@
 # URL Shortener API
 
-A clean, minimal, production-quality REST API for shortening URLs, built with FastAPI, PostgreSQL, and Docker.
+A minimal, clean, well-structured REST API for shortening URLs, built with FastAPI, PostgreSQL, and Docker.
 
 ---
 
@@ -101,7 +101,7 @@ docker compose up --build
 ```
 This builds the FastAPI container, downloads the PostgreSQL image, configures safety networks, executes the startup healthcheck, and starts both servers.
 * FastAPI app is exposed at: `http://localhost:8000`
-* PostgreSQL database is exposed at: `http://localhost:5432`
+* PostgreSQL database is available at localhost:5432
 
 To run in the background (detached mode), use:
 ```bash
@@ -225,3 +225,9 @@ By default, this command preserves the database volume `postgres_data`. If you e
 ```bash
 docker compose down -v
 ```
+
+---
+
+## Author
+
+Abdul Rahman
